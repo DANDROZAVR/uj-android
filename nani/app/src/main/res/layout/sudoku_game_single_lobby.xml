@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.nani.gui.boardsView.SudokuBoardViewSingleLobby
+        android:id="@+id/sudoku_grip_single_lobby"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:keepScreenOn="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSudoku_single_lobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sudoku_grip_single_lobby">
+
+        <TextView
+            android:id="@+id/button1_single_lobby"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:backgroundTint="@color/light_blue"
+            android:paddingLeft="10dp"
+            android:text="1 "
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/button2_single_lobby"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="10dp"
+            android:text="2"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/button3_single_lobby"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="10dp"
+            android:text="3"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/button4_single_lobby"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="10dp"
+            android:text="4"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/button5_single_lobby"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="10dp"
+            android:text="5"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/button6_single_lobby"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:text="6"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/button7_single_lobby"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="10dp"
+            android:text="7"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/button8_single_lobby"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="10dp"
+            android:text="8"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/button9_single_lobby"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="10dp"
+            android:text="9"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/redo_button_single_lobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#27312A32"
+        android:text="redo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutSudoku_single_lobby" />
+
+    <Button
+        android:id="@+id/home_button_single_lobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#27312A32"
+        android:text="home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/winning_clar_single_lobby"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_button_single_lobby" />
+
+    <Button
+        android:id="@+id/erase_sudoku_button_single_lobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#27312A32"
+        android:text="ERASE"
+        app:layout_constraintEnd_toStartOf="@+id/clear_button_single_lobby"
+        app:layout_constraintStart_toEndOf="@+id/redo_button_single_lobby"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutSudoku_single_lobby" />
+
+    <Button
+        android:id="@+id/clear_button_single_lobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#27312A32"
+        android:text="clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutSudoku_single_lobby" />
+
+    <TextView
+        android:id="@+id/won_cnt_single_lobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/last_won_single_lobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
